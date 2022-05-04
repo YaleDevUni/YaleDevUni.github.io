@@ -20,12 +20,14 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "Quick-Start Gide"
+    url: /docs/quick-start-guide/
+  - title: "Quick-Start Gide"
     url: /docs/quick-start-guide/
   - title: "About"
     url: /about/
   - title: "Sample Posts"
-    url: /year-archive/
+    url: /posts/2010-03-07-posts-link/
   - title: "Sample Collections"
     url: /collection-archive/
   - title: "Terms &amp; Privacy Policy"
