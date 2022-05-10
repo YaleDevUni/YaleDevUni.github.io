@@ -65,10 +65,12 @@ Hello! this is example inline equation $m \le \frac {n(n-1)} {2}$
 
 ### math block
 ``` latex
-Hello! this is example math block $$m \le \frac {n(n-1)} {2}$$
+Hello! this is example math block<br />
+$$m \le \frac {n(n-1)} {2}$$
 ```
 outputs:<br />
-Hello! this is example math block $$m \le \frac {n(n-1)} {2}$$
+Hello! this is example math block<br />
+$$m \le \frac {n(n-1)} {2}$$
 
 For more about mathjax, surf [here](http://docs.mathjax.org/en/latest/)
 ## Some References:
