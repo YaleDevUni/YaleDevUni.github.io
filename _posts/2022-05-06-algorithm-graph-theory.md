@@ -32,7 +32,7 @@ An undirected edge **h** represents a symmetric relationship between vertices **
 ## Undirected Paths
 
  A **walk** in a graph is a sequence of vertices **$v_1,v_2,v_3,...,v_k$**, such that there exist edges **$[v_1,v_2],[v_2,v_3],...,[v_{k-1},v_k]$**<br />
- - The **length** of a walk is the numver of edges.<br />
+ - The **length** of a walk is the number of edges.<br />
  - If $v_1=v_k$, the walk is **closed**. Otherwise, it is **open**.<br /><br />
  - If no edge is repeated, it is a **trail**.<br />
  - A closed trail is is a **circuit**.<br /><br />
