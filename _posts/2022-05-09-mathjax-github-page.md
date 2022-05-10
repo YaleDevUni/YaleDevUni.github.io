@@ -22,18 +22,16 @@ markdown: kramdown
 In  **_include** folder, create new file named **_mathjax_support.html**
 ``` html
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {
-    inlineMath: [ ['$', '$'] ], //you can modifiy here
-    displayMath: [ ['$$', '$$'] ], //you can modify here
-    processEscapes: true,
-  }
-});
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ], //you can modify here
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ], //you can modify here
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] } //by modifying this you can change font and size
+  });
 </script>
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
