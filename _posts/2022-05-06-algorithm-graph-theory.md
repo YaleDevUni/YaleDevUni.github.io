@@ -77,7 +77,7 @@ A **rooted tree** is a trees where one vertex is designated as the root<br /><br
 **Forest**: undirected graph without cycles(collection of disconnected trees)
  &ensp; - The connected components of a forest are trees<br /><br />
 ## Spanning Trees and Forests
-A **Spanning Tree** of a connected graph is a spanning subgraph that is a tree<br />
+A **spanning tree** of a connected graph is a spanning subgraph that is a tree<br />
  &ensp; - A spanning tree is not unique unless the graph is tree<br />
 A **spanning forest** of a graph is a spanning subgraph that is a forest(e.g. disconnected subgraph that has all vertices) <br /><br />
 ## Properties of Graphs, Trees, and Forests
@@ -85,3 +85,27 @@ A **spanning forest** of a graph is a spanning subgraph that is a forest(e.g. di
 - If G is connected, then $m \ge {n-1}$ <br />
 - If G is a tree, then $m=n-1$ <br />
 - If G is a forest, then $m \le n-1$ <br />
+
+## Graph Representation
+Let G is graph that is n vertices and m edges...
+
+### Set of Edges
+**A set of edges** is collection of edges.
+- Note that some vertices have to store sperately, since some might have not edges.
+
+### Adjacency Matrix
+Maintain a **2-dimensional n x n** boolean array.<br />
+For each edge [u,v], G[u][v]=G[v][u]= true(1).<br />
+**Adjacency matrix** takes $O(n^2)$ space.
+
+### Adjacency List
+Maintain an array indexed by vertices which points to a list of adjacent verices.<br />
+**Adjacency list** takes $O(n+m)$ space.
+
+## Number of Possible Spanning Subgraphs
+Since all verices must be included in the subgraph, we only have a choice about which edges to include. It has same behavior of number of subset.<br />
+With m edges, $2^m$ possibilities for spanning subgraph.<br />
+## Number of Possible Induced Subgraphs
+All edges must be included between the vertices we choose.<br />
+With n vertices, $2^n$ possibilities for induced subgraph.
+
